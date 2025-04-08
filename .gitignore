@@ -1,0 +1,40 @@
+# Kubernetes-specific files
+*.kubeconfig
+*.kube/*
+kustomize/build/*
+helm-release.yaml
+
+# Secrets and credentials (handle securely)
+*.secret.yaml
+*.secrets.yaml
+secrets.env
+.env
+.envrc
+
+# Logs and temp files
+*.log
+*.tmp
+*.swp
+*.bak
+*.out
+*.pid
+.DS_Store
+Thumbs.db
+
+# Helm-related files
+charts/
+*.tgz
+*.lock
+
+# Terraform (if used with Kubernetes)
+.terraform/
+*.tfstate
+*.tfstate.backup
+terraform.tfvars
+terraform.tfvars.json
+
+# Node dependencies (if using Kubernetes with Node.js apps)
+node_modules/
+npm-debug.log
+yarn-error.log
+pnpm-debug.log
